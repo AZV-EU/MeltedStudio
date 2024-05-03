@@ -2,7 +2,7 @@ print("Loading Melted Studio")
 
 local baseUrls = {
 	[1] = "http://azv.ddns.net/MeltedStudio/",
-	[2] = "http://azv.ddns.net/MeltedStudio/",
+	[2] = "https://raw.githubusercontent.com/AZV-EU/MeltedStudio/main/"
 }
 
 local baseUrl = baseUrls[2]
@@ -44,3 +44,5 @@ local f, err = pcall(require, gui.MeltedStudioCore)
 if not f then
 	print("Failed to run MeltedStudioCore:", err)
 end
+
+if script:IsA("ModuleScript") then return {} end
